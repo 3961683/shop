@@ -7,6 +7,11 @@
         </ul>
 
         <ul class="navbar-nav">
+
+            @if($userBar ?? false)
+                {{ $userBar }}
+            @endif
+
             @auth
 
                 <li class="nav-item dropdown">
